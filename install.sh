@@ -12,14 +12,5 @@ function copy_config() {
     echo "If you want to edit config, edit ~/.config/terminator/config file"
 }
 
-while true; do
-read -p "Do you wish to continue? " yn
-    case $yn in
-        [Yy]* )
-            copy_config
-            break;;
-        [Nn]* ) exit;;
-        * ) echo "Please answer yes or no.";;
-    esac
-done
+copy_config
 
